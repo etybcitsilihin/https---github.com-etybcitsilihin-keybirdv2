@@ -33,11 +33,57 @@
 
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/pexels-chevanon-photography-1108099.jpg">
+                    <img src="images/dawg.jpg">
                 </div>
                   <div class="about-col-2">
                   <h1 class="sub-title">About Me</h1>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque incidunt velit eaque qui voluptates quae illum facilis magnam alias impedit veniam tempora ut, animi accusantium fuga explicabo id quis sint?</p>
+
+                  <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('instagram')">Instagram</p>
+                    <p class="tab-links" onclick="opentab('facebook')">Facebook</p>
+                    <p class="tab-links" onclick="opentab('twitter')">Twitter</p>
+                  </div>
+                  <div class="tab-contents active-tab" id="instagram">
+                    <ul>
+                        <li><span>Instagram</span><br>Keybird.ca</li>
+                    </ul>
+                  </div>
+                  <div class="tab-contents" id="facebook">
+                    <ul>
+                        <li><span>Facebook</span><br>KeybirdIndus</li>
+                    </ul>
+                  </div>
+                  <div class="tab-contents" id="twitter">
+                    <ul>
+                        <li><span>Twitter</span><br>Etybcitsilhin</li>
+                    </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+       </div> 
+       
+       <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+
+            }
+             for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+
+        }
+
+       </script>
 
     </body>
 </html>
