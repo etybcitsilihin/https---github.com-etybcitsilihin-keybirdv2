@@ -168,6 +168,10 @@ nav ul li a:hover::after{
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
 }
+.services-list div i{
+    font-size: 45px;
+    margin-bottom: 30px;
+}
 .services-list div h2{
     font-size: 32px;
     font-weight: 500;
