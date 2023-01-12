@@ -2,7 +2,11 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 
+}
+html{
+    scroll-behavior: smooth;
 }
 body{
     background: #080808;
@@ -87,6 +91,9 @@ nav ul li a:hover::after{
 .about-col-1 img{
     width: 100%;
     border: 15px;
+    display: block;
+    border-radius: 10px;
+    
 }
 .about-col-2{
     flex-basis: 60%;
@@ -290,16 +297,8 @@ form .btn2{
 .copyright i{
     color: #ff004f;
 }
-/* ---------------------------------------small mobile screen port------------------ */
-@media only screen and (max-width: 600px){
-    #header{
-    }
-    .header-text{
-        margin: 100%;
-        font-size: 16px;
-    }
-    .header-text h1{
-        font-size: 30px;
-    }
-
+#msg{
+    color: #61b752;
+    margin-top: -20px;
+    display: block;
 }
