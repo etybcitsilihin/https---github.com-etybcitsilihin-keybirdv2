@@ -15,7 +15,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-color: #080808;
+    background-image: url(images/keybirdaboutheader2.png);
     background-size: cover;
     background-position: center;
 }
