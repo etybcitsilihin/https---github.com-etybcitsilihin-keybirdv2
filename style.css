@@ -90,9 +90,9 @@ nav ul li a:hover::after{
 }
 .about-col-1 img{
     width: 100%;
-    border: 15px;
     display: block;
     border-radius: 10px;
+    border: 4px solid #ff004f;
     
 }
 .about-col-2{
@@ -208,6 +208,7 @@ nav ul li a:hover::after{
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
+    border: 4px solid #ff004f;
 }
 .layer{
     width: 100%;
@@ -240,7 +241,7 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff004f;
+    border: 3px solid #ff004f;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
